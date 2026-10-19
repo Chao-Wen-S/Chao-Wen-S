@@ -1,10 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" fill="none" role="img" aria-label="努力研学的神 — 学生 / 研究者">
+  <defs>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="72"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.36" stop-color="#FFFFFF"/>
+      <stop offset="0.7" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0" stop-color="#0E7490">
+        <animate attributeName="stop-color" values="#0E7490;#4338CA;#9D174D;#DB2777;#0E7490" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.55" stop-color="#4338CA">
+        <animate attributeName="stop-color" values="#4338CA;#9D174D;#DB2777;#0E7490;#4338CA" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#9D174D">
+        <animate attributeName="stop-color" values="#9D174D;#DB2777;#0E7490;#4338CA;#9D174D" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06B6D4"><animate attributeName="stop-color" values="#06B6D4;#7C3AED;#DB2777;#06B6D4" dur="9s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#DB2777;#06B6D4;#7C3AED" dur="9s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F172A" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#0F172A" stop-opacity="0.035"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
   <rect width="1280" height="340" fill="#FFFFFF"/>
-  <text x="1234" y="238" text-anchor="end" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="190" fill="#F2F4F7">神</text>
-  <rect x="22" y="96" width="3" height="148" fill="#0969DA"/>
-  <text x="46" y="120" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" letter-spacing="0.3" fill="#6E7781">~/profile</text>
-  <text x="46" y="198" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',Inter,system-ui,sans-serif" font-size="56" font-weight="600" letter-spacing="1.5" fill="#1F2328">努力研学的神</text>
-  <rect x="46" y="224" width="64" height="2" fill="#0969DA"/>
-  <text x="46" y="266" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',Inter,system-ui,sans-serif" font-size="19" fill="#57606A">把难的东西，一点点学明白。</text>
-  <text x="46" y="316" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="2.2" fill="#8C959F">STUDENT · RESEARCHER · LEARNING IN PUBLIC</text>
+
+  <g filter="url(#soft)">
+    <ellipse cx="1075" cy="35" rx="330" ry="215" fill="#C7D2FE" opacity="0.9">
+      <animate attributeName="fill" values="#C7D2FE;#FBCFE8;#BAE6FD;#C7D2FE" dur="19s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="35;80;35" dur="13s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="1180" cy="330" rx="300" ry="210" fill="#BAE6FD" opacity="0.85">
+      <animate attributeName="fill" values="#BAE6FD;#DDD6FE;#FDE68A;#BAE6FD" dur="23s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="1180;1110;1180" dur="17s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="860" cy="360" rx="280" ry="180" fill="#FBCFE8" opacity="0.7">
+      <animate attributeName="fill" values="#FBCFE8;#A5F3FC;#DDD6FE;#FBCFE8" dur="21s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.45;0.7" dur="11s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <rect width="1280" height="340" fill="url(#scrim)"/>
+
+  <text x="1220" y="228" text-anchor="end" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="180" fill="#0F172A" opacity="0.035">神</text>
+
+  <rect x="22" y="96" width="3" height="148" fill="url(#barGrad)"/>
+  <text x="46" y="120" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" letter-spacing="0.3" fill="#6B7A90">~/profile</text>
+
+  <text x="46" y="198" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',Inter,system-ui,sans-serif" font-size="56" font-weight="600" letter-spacing="1.5" fill="url(#nameGrad)" filter="url(#glow)" opacity="0.18">努力研学的神</text>
+  <text x="46" y="198" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',Inter,system-ui,sans-serif" font-size="56" font-weight="600" letter-spacing="1.5" fill="url(#nameGrad)">努力研学的神</text>
+
+  <rect x="46" y="224" width="64" height="2" fill="url(#barGrad)"/>
+  <text x="46" y="266" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',Inter,system-ui,sans-serif" font-size="19" fill="#475569">把难的东西，一点点学明白。</text>
+  <text x="46" y="316" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="2.2" fill="#94A3B8">STUDENT · RESEARCHER · LEARNING IN PUBLIC</text>
+
+  <g transform="skewX(-16)">
+    <rect x="-620" y="-120" width="460" height="620" fill="url(#sheen)">
+      <animate attributeName="x" values="-620;1620" dur="8.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>
