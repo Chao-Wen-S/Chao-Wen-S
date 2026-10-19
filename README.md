@@ -16,15 +16,28 @@
 - **在写** — 小工具、小实验；能跑起来，才算数。
 - **在记** — 学过的东西写下来，防止自己骗自己。
 
+## 关于 / About
+
+我在学怎么把复杂的东西拆开：先让它跑通，再问它为什么快，最后才谈设计。
+
+比起收集教程，我更愿意把一个东西重写三遍——第一遍照着做，第二遍不看资料，第三遍讲给别人听。
+
+我相信大部分「学不会」不是智力问题，而是缺少一次完整的、从零到跑通的经历。
+
+*Learn it until you can rebuild it from scratch.*
+
 ## 三条原则 / Three rules
 
-1. **先跑通，再优化。** Make it work, then make it fast.
+1. **先跑通，再优雅。** Ugly and working beats elegant and imaginary.
 2. **写下来才算学会。** If I can't explain it, I don't know it.
-3. **不做没必要的抽象。** No abstraction before the third repetition.
+3. **第三遍才抽象。** Duplicate twice; abstract on the third — never earlier.
 
 ## 关注 / Focus
 
 `systems` · `machine learning` · `developer tools`
+
+<!-- 有博客、邮箱或社交账号时，在下面加一行纯文本链接，保持安静，别用 badge -->
+<!-- 例：写作在 [example.com](https://example.com) · 邮件 hi@example.com -->
 
 ---
 
